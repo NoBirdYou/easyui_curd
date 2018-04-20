@@ -1,0 +1,41 @@
+
+<body class="easyui-layout">
+    <script type="text/javascript" src="../js/computer_add_form.js"></script>
+    <script type="text/javascript">
+        $(document).ready(initAdd());
+    </script>
+    <div  data-options="region:'north'" style="margin: 10px">
+        <a class="easyui-linkbutton" data-options="iconCls:'icon-save'" onclick="submitData()">保存</a>
+    </div>
+    <HR align=center style="margin: 10px;color:#987cb9"  size=1>
+    <div data-options="region:'center',title:'North Title',split:true">
+        <form id="addMainInfo" style="margin: 30px;width: 100%;height: 50%">
+            <table>
+                <tr>
+                    <td>产品序列号：</td>
+                    <td><input id="serialNo" name="serialNo" class="easyui-valitedatebox"/></td>
+                </tr>
+                <tr>
+                    <td>主板：</td>
+                    <td><input id="mainboard" name="mainboard" class="easyui-valitedatebox"/></td>
+                </tr>
+                <tr>
+                    <td>CPU：</td>
+                    <td><input id="cpu" name="cpu" class="easyui-valitedatebox"/></td>
+                </tr>
+                <tr>
+                    <td>显卡：</td>
+                    <td><input id="graphics" name="graphics" class="easyui-valitedatebox"/></td>
+                </tr>
+                <tr>
+                    <td>电源：</td>
+                    <td><input id="power" name="power" class="easyui-valitedatebox"/></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div data-options="region:'south'" style="width: 600px;height: 400px;">
+        <table id="computer_extend_add_list">
+        </table>
+    </div>
+</body>

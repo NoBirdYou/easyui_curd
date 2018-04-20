@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../css/themes/icon.css">
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <!--<script type="text/javascript" src="../js/jquery-1.6.1.min.js"></script>-->
+    <script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../js/computer.js"></script>
+    <script type="text/javascript">
+        $(document).ready(init());
+    </script>
+    <title>电脑设备</title>
+</head>
+<body class="easyui-layout" style="font-family: Consolas">
+    <div data-options="region:'north',title:'功能',split:true" style="height:100px;">
+        <div style="margin: 10px">
+            <a id="btn_search" href="#" class="easyui-linkbutton" onclick="searchData()" data-options="iconCls:'icon-search'">查询</a>
+            <a id="btn_add" href="#" class="easyui-linkbutton" onclick="addData()" data-options="iconCls:'icon-add'">新增</a>
+            <a id="btn_update" href="#" class="easyui-linkbutton" onclick="updateData()" data-options="iconCls:'icon-edit'">修改</a>
+            <a id="btn_delete" href="#" class="easyui-linkbutton" onclick="deleteData()" data-options="iconCls:'icon-remove'">删除</a>
+        </div>
+    </div>
+    <div data-options="region:'center',title:'数据'" style="padding:5px;background:#eee;">
+        <table id="computer_list">
+        </table>
+    </div>
+    <div id="addWin">
+    </div>
+    <div id="updateWin">
+    </div>
+</body>
+</html>
