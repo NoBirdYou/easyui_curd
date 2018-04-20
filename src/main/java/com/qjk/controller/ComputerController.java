@@ -23,6 +23,10 @@ public class ComputerController {
     @Autowired
     public IComputerService iComputerService;
 
+    /**
+     * 电脑-查询数据
+     * @return
+     */
     @RequestMapping(value = "searchData.do",method = RequestMethod.POST)
     @ResponseBody
     public ServerResponse searchData(){
